@@ -1,0 +1,34 @@
+{
+  "name": "kendrick-puppet-football",
+  "version": "1.0.0",
+  "description": "A fun 2D web-based football game built with Phaser.js",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "start:node": "npx http-server -p 8000",
+    "start:php": "php -S localhost:8000"
+  },
+  "keywords": [
+    "game",
+    "football",
+    "soccer",
+    "phaser",
+    "2d",
+    "multiplayer",
+    "browser-game",
+    "html5-game"
+  ],
+  "author": "Kendrick Puppet Football Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kendrick-puppet-football.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/kendrick-puppet-football/issues"
+  },
+  "homepage": "https://github.com/yourusername/kendrick-puppet-football#readme"
+}

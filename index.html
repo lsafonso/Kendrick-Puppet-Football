@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendrick Puppet Football</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        #game-container {
+            border: 3px solid #ffd700;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .game-title {
+            text-align: center;
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+        }
+        
+        .controls-info {
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        
+        .player-controls {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            color: white;
+        }
+        
+        .player-controls div {
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        
+        .player-controls h3 {
+            color: #ffd700;
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-title">⚽ Kendrick Puppet Football ⚽</div>
+    
+    <div class="controls-info">
+        <h3>🎮 Game Controls</h3>
+        <div class="player-controls">
+            <div>
+                <h3>Player 1 (Blue)</h3>
+                <p>←↑→ Move & Jump</p>
+                <p>Spacebar Shoot</p>
+            </div>
+            <div>
+                <h3>Player 2 (Red)</h3>
+                <p>WASD Move & Jump</p>
+                <p>F Shoot</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="game-container"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
